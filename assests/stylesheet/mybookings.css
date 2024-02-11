@@ -1,0 +1,27 @@
+.no-bookings {
+  text-align: center;
+}
+
+.card-grid {
+  --min: 280px;
+  --max: 300px;
+
+  display: grid;
+  place-content: center;
+  grid-gap: var(--size-xl);
+  /* Initially, allow as many columns as fit the minmax rule */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--min)), var(--max))
+  );
+}
+
+.bookings-wrapper {
+  padding: var(--size-500);
+  border: 2px solid var(--clr-accent-2);
+  border-radius: var(--size-500);
+}
+
+.booking-label {
+  color: var(--clr-neutral-3);
+}

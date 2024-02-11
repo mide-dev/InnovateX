@@ -1,0 +1,99 @@
+/* Register STYLES */
+h2 {
+  color: var(--clr-accent-2);
+}
+
+form:where([data-signin="true"]) {
+  width: 80%;
+}
+
+form,
+label,
+input,
+.name-wrapper {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+input,
+form button,
+.dob > * {
+  width: 100%;
+}
+
+form > * {
+  margin-block: var(--size-600);
+}
+
+input,
+select {
+  padding: var(--size-200);
+  margin-top: var(--size-100);
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid var(--clr-accent-2);
+}
+
+label {
+  color: var(--clr-accent-2);
+  font-weight: var(--fw-medium);
+}
+
+.form-validation-error {
+  font-size: var(--fs-300);
+  color: var(--clr-accent-1);
+}
+
+.register-wrapper {
+  --size: 510px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--size);
+  margin-inline: auto;
+}
+
+.register-wrapper span {
+  color: var(--clr-neutral-4);
+  font-weight: var(--fw-medium);
+}
+
+.dob-wrapper {
+  padding-bottom: var(--size-500);
+}
+
+.account-name,
+.dob {
+  display: flex;
+  column-gap: var(--size-500);
+}
+
+@media (max-width: 500px) {
+  .account-name {
+    flex-direction: column;
+    row-gap: var(--size-600);
+  }
+}
+
+.btn-register {
+  border-radius: 3px;
+  background-color: var(--clr-accent-2);
+  color: white;
+  font-weight: var(--fw-medium);
+}
+
+.form-nav {
+  font-size: var(--fs-400);
+}
+
+.form-nav a {
+  color: var(--clr-secondary);
+  cursor: pointer;
+}

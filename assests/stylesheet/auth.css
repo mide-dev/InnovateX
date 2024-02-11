@@ -1,0 +1,30 @@
+.authentication-successful {
+  position: absolute;
+  top: 15%;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: var(--clr-accent-2);
+  padding: var(--size-500);
+  animation: fadeInOut 3.5s ease-in-out forwards;
+  opacity: 0;
+  color: white;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-medium);
+  border-radius: var(--size-200);
+  box-shadow: 2px 2px 5px rgba(56, 56, 56, 0.6);
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
